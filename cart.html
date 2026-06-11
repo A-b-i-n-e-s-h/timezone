@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="assests/fonts/heart_style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="TimeZone-logo">
+            <img src="assests/img/logo.png" alt="TimeZoneLogo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <span class="hot">HOT</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="latest.html">Latest</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container-header-icon">
+            <div class="container-header-icon-i">
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-cart">
+        <div class="hero-cart-row">
+            <div class="hero-cart-col">
+                <p>Cart List</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="cart">
+
+        <div class="cart-header">
+            <span>Product</span>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Total</span>
+        </div>
+
+        <div class="cart-items"></div>
+
+        <button onclick="clearCart()">clear</button>
+
+    </div>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+</body>
+
+</html>
+
