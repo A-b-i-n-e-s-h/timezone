@@ -54,17 +54,36 @@
             <span>Price</span>
             <span>Quantity</span>
             <span>Total</span>
+            <span>Remove item</span>
         </div>
 
         <div class="cart-items"></div>
 
-        <button onclick="clearCart()">clear</button>
+
+        <div class="cart-btns">
+            <div class="remove-btn remove-all-btn clear-btns" onclick="clearCart()">
+                <button>Clear</button>
+            </div>
+            <div class="remove-btn remove-all-btn update-btn"  onclick="updateCart()">
+                <button>Update</button>
+            </div>
+
+        </div>
+
+        <div class="subtotal">
+            <div></div>
+            <div class="subtotal-right">
+                <p>subtotal</p>
+                <p>$1234</p>
+            </div>
+        </div>
+
+
 
     </div>
 
-<script src="products.js"></script>
-<script src="cart.js"></script>
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
-

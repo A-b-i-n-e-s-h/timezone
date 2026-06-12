@@ -568,7 +568,7 @@
 }
 
 .remove-btn {
-    padding: 16px 50px;
+    padding: 10px 50px;
     background-color: #4a4a4b;
     color: white;
     position: relative;
@@ -683,28 +683,121 @@
     height: 20px;
     margin-bottom: 20px;
 }
-.footer{
-    width:100%;
-    margin-left: 50px;
-    padding:40px 20px;
+
+.footer {
+    width: 100%;
+
+    padding: 40px 50px;
 }
-.footer-header{
+
+.footer-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 30px;
 }
-.footer-items{
-    display:grid;
+
+.footer-items {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    line-height : 2.4
+    line-height: 2.4
 }
-.footer-items p{
+
+.footer-items p {
     margin-top: 20px;
     line-height: 1.8;
     color: #868c98;
 
 }
-.footer-items ul{
+
+.footer-items ul {
     list-style-type: none;
     color: #868c98;
+}
+
+.popup-status {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-red);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    animation: slideIn 0.3s ease-out;
+    z-index: 100;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.quantity {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.quantity button {
+    padding: 0px 6px;
+    border: 1px solid #777777;
+}
+
+.cart-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.clear-btns {
+    margin-left: 36px;
+}
+
+.update-btn {
+    justify-self: end;
+    margin-right: 110px;
+}
+
+.subtotal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px 0;
+    border-top: 1px solid #7777;
+    border-bottom: 1px solid #7777;
+     color: #828bb2;
+}
+
+.subtotal-right {
+    display: flex;
+    margin: 34px 110px;
+    justify-content: space-between;
+     color: #828bb2;
+}
+
+.grid-shipping {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.flex-shipping {
+    display: flex;
+    justify-content: flex-end;
+    gap: 78px;
+     color: #828bb2;
+}
+.flex-shipping ul{
+    list-style: none;
+    line-height: 2;
+    color: #828bb2;
+}
+.margin-t20{
+    margin-top: 20px;
 }
