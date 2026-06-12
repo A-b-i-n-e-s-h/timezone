@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="assests/fonts/heart_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -64,7 +66,7 @@
             <div class="remove-btn remove-all-btn clear-btns" onclick="clearCart()">
                 <button>Clear</button>
             </div>
-            <div class="remove-btn remove-all-btn update-btn"  onclick="updateCart()">
+            <div class="remove-btn remove-all-btn update-btn" onclick="updateCart()">
                 <button>Update</button>
             </div>
 
@@ -74,16 +76,104 @@
             <div></div>
             <div class="subtotal-right">
                 <p>subtotal</p>
-                <p>$1234</p>
+                <p id="overall-total"></p>
+            </div>
+        </div>
+
+        <div class="grid-shipping">
+            <div></div>
+            <div class="flex-shipping">
+                <p>Shipping</p>
+                <ul>
+                    <li>Flat Rate: $5.00 </li>
+                    <li>Free Shipping </li>
+                    <li>Flat Rate: $10.00 </li>
+                    <li>Local Delivery: $2.00 </li>
+                </ul>
             </div>
         </div>
 
 
+        <div class="grid-shipping margin-t20">
+            <div></div>
+            <select class="form-select">
+                <option>Bangladesh</option>
+                <option>India</option>
+                <option>Srilanka</option>
+            </select>
+        </div>
+
+
+        <div class="grid-shipping margin-t20">
+            <div></div>
+            <select class="form-select">
+                <option>Select a State</option>
+                <option>Tamil Nadu</option>
+                <option>Jaffna</option>
+            </select>
+        </div>
+
+        <div class="grid-shipping margin-t20">
+            <div></div>
+            <input class="form-control" type="text" placeholder="Enter pincode">
+        </div>
+
 
     </div>
 
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-header margin-T90">
+            <img src="assests/img/logo.png" alt="logo">
+            <h3>Quick Links</h3>
+            <h3>New Products</h3>
+            <h3>Support</h3>
+        </div>
+
+        <div class="footer-items">
+            <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.
+
+            </p>
+            <div class="quick-links">
+                <ul>
+                    <li>About</li>
+                    <li>Offers & Discounts</li>
+                    <li>Get Coupon</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="new-products">
+                <ul>
+                    <li>Woman Cloth</li>
+                    <li>Fashion Accessories</li>
+                    <li>Man Accessories</li>
+                    <li>Rubber made Toys</li>
+                </ul>
+            </div>
+            <div class="support">
+                <ul>
+                    <li>Frequently Asked Questions</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Report a Payment Issue</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
     <script src="products.js"></script>
     <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
