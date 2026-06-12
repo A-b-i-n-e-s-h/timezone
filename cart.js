@@ -71,12 +71,12 @@ function renderCart() {
         div.innerHTML = `
     
             <div class="product-info">
-                <img src="${item.img}" width="60">
+                <img src="${item.img}">
                 <span>${item.name}</span>
             </div>
 
             <div class="price">
-                <span>${item.price}</span>
+                <span>$${item.price}</span>
             </div>
 
             <div class="quantity">
@@ -89,8 +89,11 @@ function renderCart() {
             <div class="total">
                 <span>$${item.quantity * item.price}</span>
             </div>
-            <button onclick="removeItem(${item.id})">&#10060;</button>
 
+           <div  class="remove-btn" >
+                 <button onclick="removeItem(${item.id})">Remove</button>
+           </div>
+            
      `;
 
         container.appendChild(div);
@@ -98,7 +101,14 @@ function renderCart() {
 
 }
 
-//
+//  remove the item
+function removeItem(id){
+    cart = cart.filter(item => item.id !== id);
+    saveCart();
+    renderCart();
+}
+
+
 
 renderCart();
 
