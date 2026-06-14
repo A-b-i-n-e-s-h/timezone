@@ -21,7 +21,6 @@ document.getElementById("loginForm").addEventListener('submit', async function (
         localStorage.setItem("loggedUser", JSON.stringify(user));
         document.getElementById("msg").innerHTML=`Logged in , Welcome ${user.name}`;
         document.getElementById("msg").style.color="green";
-        document.getElementById("welcome").innerHTML=`Welcome ${user.name} !`
         setTimeout(()=>{
             window.location.href="index.html";
         },2000);

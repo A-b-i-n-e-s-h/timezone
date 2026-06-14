@@ -1,4 +1,4 @@
-//const api = "https://6a2edeadc9776ca6c0c507c5.mockapi.io/users/";
+//const api = "https://6a2ef1cdc9776ca6c0c5203c.mockapi.io/users";
 
 const form = document.getElementById("registerForm");
 form.addEventListener('submit', async function (e) {
@@ -19,19 +19,20 @@ form.addEventListener('submit', async function (e) {
     const response = await fetch('https://6a2ef1cdc9776ca6c0c5203c.mockapi.io/users', {
         method:"POST",
         headers:{
-            "Content-Type":"application/json"
+            "content-type":"application/json"
         },
         body: JSON.stringify(newUsers)
     });
+    console.log(response);
 
     const data = await response.json();
-    console.log("data");
+    console.log(data);
 
     
     document.getElementById("msg").innerHTML = "Registered Successfully";
 
-    setTimeout(()=>{
-        window.location.href="index.html";
+      setTimeout(()=>{
+        window.location.href="login.html";
     },2000);
 
 });

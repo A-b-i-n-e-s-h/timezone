@@ -18,12 +18,12 @@
         <button onclick='window.location.href="register.html"'>Register</button>
     </form>
 
-    <p id="error" style="color:red;"></p>
+    <p id="msg" style="color:red;"></p>
 
 
 
-    <!-- <script src="login.js"></script> -->
-     <script>
+    <script src="login.js"></script>
+     <!-- <script>
 
 
 
@@ -36,11 +36,12 @@
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
             });
+            console.log(response);
             const users = await response.json();
             console.log(users);
 
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
