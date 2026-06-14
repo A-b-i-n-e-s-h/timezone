@@ -30,6 +30,13 @@
 
 }
 
+.welcome {
+    font-size: 96px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #0b1c39;
+}
+
 .TimeZone-logo {
     padding-left: 15px;
     width: 30%;
@@ -771,14 +778,14 @@
     margin: 20px 0;
     border-top: 1px solid #7777;
     border-bottom: 1px solid #7777;
-     color: #828bb2;
+    color: #828bb2;
 }
 
 .subtotal-right {
     display: flex;
     margin: 34px 110px;
     justify-content: space-between;
-     color: #828bb2;
+    color: #828bb2;
 }
 
 .grid-shipping {
@@ -791,13 +798,15 @@
     display: flex;
     justify-content: flex-end;
     gap: 78px;
-     color: #828bb2;
+    color: #828bb2;
 }
-.flex-shipping ul{
+
+.flex-shipping ul {
     list-style: none;
     line-height: 2;
     color: #828bb2;
 }
-.margin-t20{
+
+.margin-t20 {
     margin-top: 20px;
 }

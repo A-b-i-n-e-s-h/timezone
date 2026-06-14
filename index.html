@@ -40,6 +40,7 @@
     <section class="banner">
         <div class="banner-row">
             <div class="banner-col-left">
+                <p id="welcome">Welcome</p>
                 <h1 class="banner-text">Select Your New Perfect Style</h1>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat is aute irure.</p>
@@ -307,8 +308,10 @@
 
     </footer>
 
-
-
+    <script>
+        const user = JSON.parse(localStorage.getItem("loggedUser"));
+        document.getElementById("welcome").innerHTML=`Welcome ${user.name} !`
+    </script>
     <script src="products.js"></script>
     <script src="cart.js"></script>
 </body>
